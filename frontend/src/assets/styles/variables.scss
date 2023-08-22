@@ -1,0 +1,48 @@
+/* fonts */
+$font-roboto: Roboto;
+$font-yellowtail: Yellowtail;
+$font-open-sans: "Open Sans";
+
+/* Shadow */
+$shadow-color: #7EB693;;
+$shadow-offset-x: 0;
+$shadow-offset-y: 8px;
+$shadow-blur-radius: 18px;
+$shadow-spread-radius: 0;
+
+/* font sizes */
+$fs-15: 0.94em;
+$fs-18: 1.125em;
+$fs-19: 1.19em;
+$fs-20: 1.25em;
+$fs-25: 1.56em;
+$fs-30: 1.875em;
+$fs-36: 2.25em;
+$fs-38: 2.375em;
+$fs-40: 2.5em;
+$fs-50: 3.125em;
+$fs-70: 4.375em;
+$fs-220: 13.75em;
+
+/* Colors */
+$color-white: #fff;
+$color-darkslategray: #274C5B;
+$color-khaki: #efd372;
+$color-dark-green: #7eb693;
+$color-mint-green: #F1F8F4;
+$color-ligth-green: #EFF6F1;
+$color-gray: #e0e0e0;
+$color-whitesmoke: #f9f8f8;
+$color-silver: #b8b8b8;
+$color-dimgray: #525c60;
+$color-lightgray: #d4d4d4;
+$color-pink: #F96893;
+$color-light-mint: #8FA8A8;
+$color-light-mint-green: #EAEFF1;
+
+// Media breakpoints
+$x-large-device-breakpoint: 1399.98px;
+$large-device-breakpoint: 1199.98px;
+$medium-device-breakpoint: 991.98px;
+$small-device-breakpoint: 767.98px;
+$x-small-device-breakpoint: 575.98px;

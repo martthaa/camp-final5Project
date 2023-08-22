@@ -1,0 +1,128 @@
+.offer {
+
+    &:nth-of-type(1),
+    &:nth-of-type(2) {
+        width: 40%;
+        height: 370px; 
+        border-radius: 30px;
+        border:none;
+        cursor: pointer;
+
+        &:hover {
+            transform: scale(1.10); 
+        }
+    }
+
+    &:nth-of-type(1) {
+        background: url("../../assets/images/offer1.jpg") center center/cover no-repeat;
+        width: 40%;
+        .offer__subtitle,
+        .offer__title {
+            color: $color-white;
+        }
+    }
+
+    @media (max-width: $x-small-device-breakpoint) {
+        &:nth-of-type(1) {
+            background: $color-pink;
+        }
+    }
+
+    &:nth-of-type(2) {
+        background: url("../../assets/images/offer2.jpg") center center/cover no-repeat;
+        width: 40%;
+        .offer__subtitle {
+            color: $color-dark-green;
+        }
+    }
+
+    @media (max-width: $x-small-device-breakpoint) {
+        &:nth-of-type(2) {
+            background: $color-light-mint-green;
+        }
+    }
+
+
+    &__content-wrapper {
+        height: 100%;
+        width: 50%;
+        padding-left: 55px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    @media (max-width: $x-large-device-breakpoint) {
+        &__content-wrapper {
+            width: 55%;
+        }
+    }
+
+    @media (max-width: $large-device-breakpoint) {
+        &__content-wrapper {
+            width: 58%;
+        }
+    }
+
+    @media (max-width: $x-small-device-breakpoint) {
+        &__content-wrapper {
+            width: 100%;
+            padding: 25px;
+            text-align: center;
+        }
+    }
+
+    &__subtitle {
+        font-family: 'Yellowtail';
+        font-weight: 400;
+        font-size: $fs-36;
+    }
+
+    &__title {
+        font-family: Roboto,sans-serif;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+    }
+}
+
+.cards{
+    padding: 145px 0;
+    gap:4%;
+
+    // @media (max-width: 890px) {
+    //     display: flex;
+    //     flex-direction: column;
+    // }
+
+   
+}
+
+@media (max-width: $large-device-breakpoint) {
+    .offer {
+        height: 270px;
+    }
+}
+
+@media (max-width: $small-device-breakpoint) {
+    .offer {
+        height: 270px;
+        width: 100%;
+    }
+}
+
+@media (max-width: $x-small-device-breakpoint) {
+    .offer {
+        height: 170px;
+        width: 100%;
+    }
+
+}
+
+
+
+
+
+
+

@@ -1,0 +1,181 @@
+@import "../../assets/styles/variables.scss";
+
+.footer {
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: auto;
+        margin-bottom: 102px;
+    }
+
+    &__contacts,
+    &__social,
+    &__utilities {
+        padding: 0 50px;
+    }
+
+    &__contacts {
+        text-align: right;
+        padding-left: 0;
+    }
+
+    &__contacts-items {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    &__contacts-item {
+        font-family: 'Open Sans', sans-serif;
+        font-size: $fs-18;
+        line-height: 1.65;
+        color: $color-dimgray;
+
+        &__title {
+            font-weight: 700;
+        }
+
+        &__link {
+            font-weight: 400;
+        }
+    }
+
+    &__contacts-title,
+    &__utilities-title {
+        font-weight: 700;
+        font-size: $fs-30;
+        line-height: 35px;
+        margin-bottom: 32px;
+    }
+
+    &__social {
+        text-align: center;
+        border-left: 1px solid $color-lightgray;
+        border-right: 1px solid $color-lightgray;
+    }
+
+    &__social-brand {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 23px;
+    }
+
+    &__social-slogan {
+        width: 85%;
+        margin: 0 auto;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        font-size: $fs-18;
+        line-height: 1.65;
+        color: $color-dimgray;
+        margin-bottom: 50px;
+    }
+
+    &__social-items {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-bottom: 100px;
+        flex-wrap: wrap;
+    }
+
+    &__social-item {
+        display: inline-block;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+
+        &.instagram {
+            background: $color-mint-green url("../../assets/images/footer-instagram.svg") center center no-repeat;
+        }
+
+        &.facebook {
+            background: $color-mint-green url("../../assets/images/footer-facebook.svg") center center no-repeat;
+        }
+
+        &.twitter {
+            background: $color-mint-green url("../../assets/images/footer-twitter.svg") center center no-repeat;
+        }
+
+        &.pinterest {
+            background: $color-mint-green url("../../assets/images/footer-pinterest.svg") center center no-repeat;
+        }
+    }
+
+    &__utilities {
+        text-align: left;
+        padding-right: 0;
+    }
+
+    &__utilities-items {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        font-size: $fs-18;
+        color: $color-dimgray;
+    }
+
+    &__copyright {
+        text-align: center;
+        padding: 17px 0;
+        border-top: 1px solid $color-lightgray;
+    }
+
+    @media (max-width: $medium-device-breakpoint) {
+        &__wrapper {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        &__contacts,
+        &__social,
+        &__utilities {
+            padding: 0 20px;
+        }
+    }
+
+    @media (max-width: $x-small-device-breakpoint) {
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+
+        &__social {
+            padding: 0;
+            border: none;
+            order: 1;
+        }
+
+        &__social-items,
+        &__social-slogan {
+            margin-bottom: 20px;
+        }
+
+        &__contacts {
+            text-align: center;
+            order: 2;
+            margin-bottom: 20px;
+        }
+
+        &__contacts-item {
+            display: grid;
+            grid-template-columns: 60px 1fr;
+            align-content: flex-start;
+            text-align: left;
+        }
+
+        &__utilities {
+            order: 3;
+            text-align: center;
+        }
+
+        &__utilities-items {
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+    }
+}

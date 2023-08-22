@@ -1,0 +1,55 @@
+//@import "assets/styles/variables.scss";
+@import "../../assets/styles/variables.scss";
+
+.main-button {
+    padding: 18px 30px;
+    border-radius: 16px;
+    font-weight: 700;
+    font-size: $fs-18;
+    line-height: 23px;
+    border: none;
+
+    &__text {
+        position: relative;
+        padding-right: 30px;
+
+        &:after {
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 0;
+            background: url('../../assets/images/button-arrow.svg') center center no-repeat;
+        }
+
+        &.noArrow {
+            padding-right: 0;
+
+            &:after {
+                content: none;
+            }
+        }
+    }
+
+
+    &.white {
+        background: transparent;
+        border: 2px solid $color-darkslategray;
+    }
+
+    &.yellow {
+        background: $color-khaki;
+    }
+
+    &.dark-blue {
+        background: $color-darkslategray;
+        color: $color-white;
+    }
+}
+
+.main-button:hover {
+    background: #7EB693;
+    color: #ffff;
+}

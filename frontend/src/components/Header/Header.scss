@@ -1,0 +1,140 @@
+
+/////////////// HEADER
+.header {
+    padding: 30px 90px;
+
+    background: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+
+    &__actions {
+        display: flex;
+        align-items: center; 
+        gap: 20px; 
+        color: black;
+    }
+
+    &__search-input-wrapper {
+        position: relative;
+        width: 60%;
+        height: 66px;
+
+        &:after {
+            content: "";
+            width: 56px;
+            height: 56px;
+            background: #274C5B url("../../assets/images/search-icon.svg") center center no-repeat;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 6px;
+            z-index: 1;
+            cursor: pointer;
+        }
+
+    }
+    &__search-input {
+        padding: 10px 0px 10px 30px;
+        width: 100%;
+        height: 100%;
+        background: #FAFAFA;
+        border-radius: 36px;
+        border: none;
+    }
+
+    @media (max-width: $small-device-breakpoint) {
+        padding: 5px 20px;
+    }
+}
+
+.nav{
+    margin-right:5%;
+    gap: 10px;    
+    font-family: Roboto, sans-serif;
+    color: #FFBB00;
+    display: flex;
+    font-weight: 700;
+    font-size: 1.25em;
+    line-height: 23px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+
+    &__icon{
+        margin-right: 8px;
+    }
+
+    &__title{
+        color: #274C5B;
+        font-family: Roboto, sans-serif;
+        font-weight: 700;
+        font-size: 2.375em;
+        line-height: 45px;
+    }
+}
+
+.cart {
+    position: relative;
+    width: 170px;
+    height: 66px;
+    border: 1px solid #FAFAFA;
+    border-radius: 33px;
+    text-align: left;
+    padding-left: 75px;
+    line-height: 66px;
+    vertical-align: baseline;
+    font-weight: 600;
+    font-size: 30px;
+
+    &__number {
+        margin-left: 70px;
+        color: #274C5B;
+        font-family: Roboto, sans-serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+
+
+    &:after {
+        content: "";
+        width: 56px;
+        height: 56px;
+        background: #274C5B url("../../assets/images/cart-icon.svg") center center no-repeat;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 6px;
+        z-index: 1;
+        cursor: pointer;
+    }
+
+    
+}
+
+.SignIn{
+    background: #F9F8F8;
+    padding: 18px 30px;
+    border-radius: 16px;
+    font-weight: 700;
+    font-size: 1.125em;
+    line-height: 23px;
+    white-space: nowrap; 
+    display: inline-block;
+    transition: background-color 0.4s ease;
+
+    &:hover{
+        background: #EFD372;
+    }
+}
+
+

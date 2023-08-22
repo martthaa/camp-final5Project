@@ -1,0 +1,30 @@
+@import "../../../assets/styles/variables.scss";
+
+
+.brand {
+    &__link {
+        display: flex;
+        align-items: center;
+    }
+
+    &__icon {
+        margin-right: 8px;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: $fs-38;
+        line-height: 45px;
+    }
+
+    @media (max-width: $small-device-breakpoint) {
+        &__icon {
+            height: 46px;
+        }
+
+        &__title {
+            font-size: $fs-30;
+        }
+
+    }
+}
