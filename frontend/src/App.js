@@ -17,7 +17,8 @@ import { EcoFriendly } from './components/EcoFriendly/EcoFriendly.jsx';
 import { Gallery } from './components/Gallery/Gallery.jsx';
 import { News } from './components/News/News';
 import { Subscribe } from './components/Subscribe/Subscribe.jsx';
-
+import {ToastContainer} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const App = () => {
   return (
@@ -34,10 +35,10 @@ const App = () => {
           <Gallery />
           <News />
           <Subscribe />
-      
           <Outlet />
       </main>
       <Footer />
+      <ToastContainer />
     </div>
   )
 }

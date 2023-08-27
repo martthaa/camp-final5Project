@@ -70,7 +70,12 @@ table th {
 .modal-content {
   width: 100%;
   border-radius: 0; /* Optional: Remove border radius for a clean look */
+  background-color: transparent;
+  // padding: 40px 0;
+  border: none;
+  box-shadow: none;
 }
+
 
 @media (min-width: 576px) {
   .modal-dialog {

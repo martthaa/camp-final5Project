@@ -1,10 +1,11 @@
 import { useEffect, useState } from 'react';
-
+import Loader from '../components/Loader/Loader'
 import React from 'react';
 import { Row, Col, Container } from 'react-bootstrap';
 import { Product } from '../components/Product/Product.jsx';
 import { Button } from '../utils/Button/Button';
 import {useGetProductsQuery} from '../slices/productsApiSlice';
+import Message from '../components/Message/Message'
 //import axios from 'axios';
 //import products from '../products';
 
@@ -27,8 +28,8 @@ const HomeScreen = () => {
   return (
     <>
     {isLoading ? (
-      <h2>Loading...</h2>
-    ) : error ? (<div>{error?.data?.messaage || error.error}</div>) : (<>
+      <Loader/>
+    ) : error ? (<Message variant='danger'>{error?.data?.messaage || error.error}</Message>) : (<>
       <Container>
       <div className="products">
         <div className="products__subtitle">Categories</div>
