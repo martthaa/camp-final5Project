@@ -1,125 +1,119 @@
-
-
 .home {
-    padding: 246px 0;
-    background: url("../../assets/images/home_bg.jpg") center center/cover no-repeat;
-    display: flex;
-    align-items: center;
+  padding: 246px 0;
+  background: url("../../assets/images/home_bg.jpg") center center/cover
+    no-repeat;
+  display: flex;
+  align-items: center;
 
-    &__content {
-        
-    }
+  &__content {
+  }
 
-    &__subtitle {
-        font-family: 'Yellowtail', arial, helvetica, sans-serif;
-        color: #68A47F;
-        font-size: 36px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-    }
+  &__subtitle {
+    font-family: "Yellowtail", arial, helvetica, sans-serif;
+    color: #68a47f;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  &__title {
+    color: #274c5b;
+    font-family: Roboto, sans-serif;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    width: 85%;
+  }
+
+  &__content {
+    width: 40%;
+  }
+
+  @media (max-width: $large-device-breakpoint) {
+    padding: 96px 0;
+    height: calc(100vh - 96px);
 
     &__title {
-        color: #274C5B;
-        font-family: Roboto,sans-serif;
-        font-size: 70px;
-        font-style: normal;
-        font-weight: 800;
-        line-height: normal;
-        width: 85%;
+      font-size: $fs-50;
+      line-height: 52px;
+      margin-bottom: 23px;
     }
 
     &__content {
-        width: 40%;
+      width: 45%;
     }
+  }
 
-    @media (max-width: $large-device-breakpoint) {
-        padding: 96px 0;
-        height: calc(100vh - 96px);
+  @media (max-width: $small-device-breakpoint) {
+    height: calc(100vh - 66px);
+    padding: 66px 0;
+    background: url("../../assets/images/home_bg.jpg") top left/cover no-repeat;
+    text-align: center;
 
-        &__title {
-            font-size: $fs-50;
-            line-height: 52px;
-            margin-bottom: 23px;
-        }
-
-        &__content {
-            width: 45%;
-        }
+    &__content {
+      width: 100%;
     }
+  }
 
+  @media (max-width: $x-small-device-breakpoint) {
+    background: #eeecef;
+  }
 
-    @media (max-width: $small-device-breakpoint) {
-        height: calc(100vh - 66px);
-        padding: 66px 0;
-        background: url("../../assets/images/home_bg.jpg") top left/cover no-repeat;
-        text-align: center;
+  @media (max-width: $x-small-device-breakpoint) {
+    background: #eeecef url("../../assets/images/background_decor.png") top
+      left/cover no-repeat;
+  }
 
-        &__content {
-            width: 100%;
-        }
-    }
-
-    @media (max-width: $x-small-device-breakpoint) {
-        background: #EEECEF;
-        
-    }
-
-    @media (max-width: $x-small-device-breakpoint) {
-        background: #EEECEF url("../../assets/images/background_decor.png") top left/cover no-repeat;
-    }
-
-    @media (max-width: 470px) {
-        padding-top: 130px;
-        
-    }
- 
+  @media (max-width: 470px) {
+    padding-top: 130px;
+  }
 }
 
 .button-main {
-    padding: 18px 30px;
-    border-radius: 16px;
-    font-weight: 700;
-    font-size: $fs-18;
-    line-height: 23px;
-    
-    &__text {
-        position: relative;
-        padding-right: 30px;
+  padding: 18px 30px;
+  border-radius: 16px;
+  font-weight: 700;
+  font-size: $fs-18;
+  line-height: 23px;
 
-        &:after {
-            content: "";
-            position: absolute;
-            width: 20px;
-            height: 20px;
-            top: 50%;
-            transform: translateY(-50%);
-            right: 0;
-            background: url('../../assets/images/button-arrow.svg') center center no-repeat;
+  &__text {
+    position: relative;
+    padding-right: 30px;
 
-        }
-
-        &.noArrow {
-            padding-right: 0;
-
-            &:after {
-                content: none;
-            }
-        }
+    &:after {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 0;
+      background: url("../../assets/images/button-arrow.svg") center center
+        no-repeat;
     }
 
-    &.white {
-        background: transparent;
-        border: 2px solid $color-darkslategray;
-    }
+    &.noArrow {
+      padding-right: 0;
 
-    &.yellow {
-        background: $color-khaki;
+      &:after {
+        content: none;
+      }
     }
+  }
 
-    &.dark-blue {
-        background: $color-darkslategray;
-        color: $color-white;
-    }
+  &.white {
+    background: transparent;
+    border: 2px solid $color-darkslategray;
+  }
+
+  &.yellow {
+    background: $color-khaki;
+  }
+
+  &.dark-blue {
+    background: $color-darkslategray;
+    color: $color-white;
+  }
 }
-

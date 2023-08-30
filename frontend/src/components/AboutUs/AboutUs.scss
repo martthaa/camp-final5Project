@@ -1,116 +1,120 @@
 //@import "assets/styles/variables.scss";
 
 .about-us {
-    padding: 126px 0;
-    background: #f9f8f8 url("../../assets/images/about_us_bg.png") center left -10%/75% no-repeat;
+  padding: 126px 0;
+  background: #f9f8f8 url("../../assets/images/about_us_bg.png") center left -10%/75%
+    no-repeat;
 
-    @media (max-width: $large-device-breakpoint) {
-        padding: 96px 0;
-    }
+  @media (max-width: $large-device-breakpoint) {
+    padding: 96px 0;
+  }
 
-    @media (max-width: $small-device-breakpoint) {
-        padding: 66px 0;
-    }
+  @media (max-width: $small-device-breakpoint) {
+    padding: 66px 0;
+  }
 
+  &__content {
+    width: 50%;
+    margin-left: 50%;
+  }
+
+  @media (max-width: $small-device-breakpoint) {
     &__content {
-        width: 50%;
-        margin-left: 50%;
+      width: 100%;
+      margin-left: 0;
+      text-align: center;
     }
+  }
 
-    @media (max-width: $small-device-breakpoint) {
-        &__content {
-            width: 100%;
-            margin-left: 0;
-            text-align: center;
-        }
-    }
+  &__subtitle {
+    font-family: "Yellowtail", arial, helvetica, sans-serif;
+    font-weight: 400;
+    font-size: $fs-36;
+    color: $color-dark-green;
+    margin-bottom: 10px;
+  }
 
-    &__subtitle {
-        font-family: 'Yellowtail', arial, helvetica, sans-serif;
-        font-weight: 400;
-        font-size: $fs-36;
-        color: $color-dark-green;
-        margin-bottom: 10px;
-    }
+  &__title {
+    color: #274c5b;
+    font-family: Roboto, sans-serif;
+    font-size: 50px;
+    font-weight: 800;
+  }
 
+  @media (max-width: $large-device-breakpoint) {
     &__title {
-        color: #274C5B;
-        font-family: Roboto, sans-serif;
-        font-size: 50px;
-        font-weight: 800;
+      font-size: $fs-50;
+      line-height: 52px;
     }
+  }
 
-    @media (max-width: $large-device-breakpoint) {
-        &__title {
-            font-size: $fs-50;
-            line-height: 52px;
-        }
-    }
+  &__description {
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: $fs-18;
+    line-height: 1.65;
+    color: $color-dimgray;
+    margin-bottom: 45px;
+  }
 
-    &__description {
-        font-family: 'Open Sans';
-        font-weight: 400;
-        font-size: $fs-18;
-        line-height: 1.65;
-        color: $color-dimgray;
-        margin-bottom: 45px;
-    }
+  &__items {
+    margin-bottom: 45px;
+  }
 
+  @media (max-width: $small-device-breakpoint) {
     &__items {
-        margin-bottom: 45px;
+      text-align: initial;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+
+    &:nth-of-type(1) {
+      .about-us__item-image {
+        background: $color-white url("../../assets/images/about_us_organic.svg")
+          center center no-repeat;
+      }
     }
 
-    @media (max-width: $small-device-breakpoint) {
-        &__items {
-            text-align: initial;
-        }
+    &:nth-of-type(2) {
+      .about-us__item-image {
+        background: $color-white
+          url("../../assets/images/about_us_standards.svg") center center
+          no-repeat;
+      }
     }
+  }
 
-    &__item {
-        display: flex;
-        align-items: center;
-        gap: 20px;
-        margin-bottom: 20px;
+  &__item-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+  }
 
-        &:nth-of-type(1) {
-            .about-us__item-image {
-                background: $color-white url('../../assets/images/about_us_organic.svg') center center no-repeat;
-            }
-        }
+  &__item-title {
+    color: #274c5b;
+    font-family: Roboto, sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
 
-        &:nth-of-type(2) {
-            .about-us__item-image {
-                background: $color-white url('../../assets/images/about_us_standards.svg') center center no-repeat;
-            }
-        }
-    }
-
-    &__item-image {
-        width: 100px;
-        height: 100px;
-        border-radius: 20px;
-    }
-
-    &__item-title {
-        color: #274C5B;
-        font-family: Roboto,sans-serif;
-        font-size: 25px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal;
-    }
-
-    &__item-description {
-        font-family: 'Open Sans', sans-serif;
-        font-weight: 400;
-        font-size: $fs-18;
-        line-height: 1.65;
-        color: $color-dimgray;
-    }
+  &__item-description {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: $fs-18;
+    line-height: 1.65;
+    color: $color-dimgray;
+  }
 }
 
 @media (max-width: $small-device-breakpoint) {
-    .about-us {
-        background: $color-whitesmoke;
-    }
+  .about-us {
+    background: $color-whitesmoke;
+  }
 }

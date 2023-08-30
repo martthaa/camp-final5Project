@@ -1,83 +1,84 @@
 .eco-friendly {
-    padding: 126px 0;
-    background: $color-whitesmoke url("../../assets/images/eco-friendly_bg.jpg") center left/50% 100% no-repeat;
+  padding: 126px 0;
+  background: $color-whitesmoke url("../../assets/images/eco-friendly_bg.jpg")
+    center left/50% 100% no-repeat;
 
-    @media (max-width: $large-device-breakpoint) {
-        padding: 96px 0;
-    }
+  @media (max-width: $large-device-breakpoint) {
+    padding: 96px 0;
+  }
 
-    @media (max-width: $small-device-breakpoint) {
-        padding: 66px 0;
-        background: none;
-    }
+  @media (max-width: $small-device-breakpoint) {
+    padding: 66px 0;
+    background: none;
+  }
 
+  &__content {
+    width: 60%;
+    margin-left: 40%;
+    background: $color-white;
+    border-radius: 30px;
+    padding: 80px 90px;
+  }
+
+  @media (max-width: $medium-device-breakpoint) {
     &__content {
-        width: 60%;
-        margin-left: 40%;
-        background: $color-white;
-        border-radius: 30px;
-        padding: 80px 90px;
+      width: 100%;
+      margin-left: 0;
     }
+  }
 
-    @media (max-width: $medium-device-breakpoint) {
-        &__content {
-            width: 100%;
-            margin-left: 0;
-        }
+  @media (max-width: $small-device-breakpoint) {
+    &__content {
+      padding: 0 30px;
     }
+  }
 
-    @media (max-width: $small-device-breakpoint) {
-        &__content {
-            padding: 0 30px;
-        }
-    }
+  &__subtitle {
+    font-family: "Yellowtail", arial, helvetica, sans-serif;
+    font-weight: 400;
+    font-size: $fs-36;
+    color: $color-dark-green;
+    margin-bottom: 10px;
+  }
 
+  @media (max-width: $small-device-breakpoint) {
     &__subtitle {
-        font-family: 'Yellowtail', arial, helvetica, sans-serif;
-        font-weight: 400;
-        font-size: $fs-36;
-        color: $color-dark-green;
-        margin-bottom: 10px;
+      text-align: center;
     }
+  }
 
-    @media (max-width: $small-device-breakpoint) {
-        &__subtitle {
-            text-align: center;
-        }
-    }
+  &__title {
+    color: #274c5b;
+    font-family: Roboto, sans-serif;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+  }
 
+  @media (max-width: $large-device-breakpoint) {
     &__title {
-        color: #274C5B;
-        font-family: Roboto, sans-serif;
-        font-size: 50px;
-        font-style: normal;
-        font-weight: 800;
-        line-height: normal;
+      font-size: $fs-50;
+      line-height: 52px;
     }
+  }
 
-    @media (max-width: $large-device-breakpoint) {
-        &__title {
-            font-size: $fs-50;
-            line-height: 52px;
-        }
+  @media (max-width: $small-device-breakpoint) {
+    &__title {
+      text-align: center;
     }
+  }
 
-    @media (max-width: $small-device-breakpoint) {
-        &__title {
-            text-align: center;
-        }
-    }
+  &__item-title {
+    font-weight: 500;
+    font-size: $fs-25;
+  }
 
-    &__item-title {
-        font-weight: 500;
-        font-size: $fs-25;
-    }
-
-    &__item-description {
-        font-family: 'Open Sans', sans-serif;
-        font-weight: 400;
-        font-size: $fs-18;
-        line-height: 1.65;
-        color: $color-dimgray;
-    }
+  &__item-description {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: $fs-18;
+    line-height: 1.65;
+    color: $color-dimgray;
+  }
 }

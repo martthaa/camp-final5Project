@@ -1,77 +1,76 @@
 .offer-cards {
-    text-align: center;
-    padding: 126px 0;
-    text-align: left;
-    background: $color-darkslategray;
+  text-align: center;
+  padding: 126px 0;
+  text-align: left;
+  background: $color-darkslategray;
 
-    @media (max-width: $large-device-breakpoint) {
-        padding: 96px 0;
-    }
+  @media (max-width: $large-device-breakpoint) {
+    padding: 96px 0;
+  }
 
-    @media (max-width: $small-device-breakpoint) {
-        padding: 66px 0;
-    }
+  @media (max-width: $small-device-breakpoint) {
+    padding: 66px 0;
+  }
 
+  &__subtitle {
+    font-family: "Yellowtail";
+    font-weight: 400;
+    font-size: $fs-36;
+    color: $color-dark-green;
+  }
+
+  @media (max-width: $small-device-breakpoint) {
     &__subtitle {
-        font-family: 'Yellowtail';
-        font-weight: 400;
-        font-size: $fs-36;
-        color: $color-dark-green;
+      text-align: center;
     }
+  }
 
-    @media (max-width: $small-device-breakpoint) {
-        &__subtitle {
-            text-align: center;
-        }
-    }
+  &__title {
+    font-family: Roboto, sans-serif;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    color: $color-white;
+    margin-bottom: 30px;
+  }
 
+  @media (max-width: $small-device-breakpoint) {
     &__title {
-        font-family: Roboto, sans-serif;
-        font-size: 50px;
-        font-style: normal;
-        font-weight: 800;
-        line-height: normal;
-        color: $color-white;
-        margin-bottom: 30px;
+      text-align: center;
     }
+  }
 
-    @media (max-width: $small-device-breakpoint) {
-        &__title {
-            text-align: center;
-        }
-    }
+  &__cards-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 19rem);
+    grid-template-rows: auto;
+    gap: 20px;
+    margin-top: 40px;
+    justify-content: center;
+  }
 
+  @media (max-width: $x-large-device-breakpoint) {
     &__cards-wrapper {
-        display: grid;
-        grid-template-columns: repeat(4, 19rem);
-        grid-template-rows: auto;
-        gap: 20px;
-        margin-top: 40px;
-        justify-content: center;
+      grid-template-columns: repeat(4, 17rem);
     }
+  }
 
-    @media (max-width: $x-large-device-breakpoint) {
-        &__cards-wrapper {
-            grid-template-columns: repeat(4, 17rem);
-        }
+  @media (max-width: $large-device-breakpoint) {
+    &__cards-wrapper {
+      grid-template-columns: repeat(2, 20rem);
     }
+  }
 
-    @media (max-width: $large-device-breakpoint) {
-        &__cards-wrapper {
-            grid-template-columns: repeat(2, 20rem);
-        }
+  @media (max-width: $small-device-breakpoint) {
+    &__cards-wrapper {
+      grid-template-columns: repeat(2, 16rem);
     }
+  }
 
-    @media (max-width: $small-device-breakpoint) {
-        &__cards-wrapper {
-            grid-template-columns: repeat(2, 16rem);
-        }
+  @media (max-width: $x-small-device-breakpoint) {
+    &__cards-wrapper {
+      grid-template-columns: minmax(12rem, 19rem);
     }
-
-    @media (max-width: $x-small-device-breakpoint) {
-        &__cards-wrapper {
-            grid-template-columns: minmax(12rem, 19rem);
-        }
-    }
-
+  }
 }
