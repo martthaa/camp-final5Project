@@ -13,6 +13,9 @@ The project is structured as follows:
 ## Workflow
 [Link to the visualized workflow of the project in Figma](https://www.figma.com/file/9NfzB1X2GkTQbEpgOlKAl2/Organick?type=design&node-id=0%3A1&mode=design&t=Q3Ciujy2ZKBDLAJm-1)
 
+## Screens
+[Link to screens](https://www.figma.com/file/mSFXsbby7TVAQzDzZjbZJM/Untitled?type=design&node-id=1-2&mode=design)
+
 ## Features
 
 - Full-featured shopping cart with quantity management.
@@ -38,6 +41,25 @@ The system supports two distinct roles:
 ## Database
 
 The application's data is stored in MongoDB, and we use Mongoose to connect to the database and execute queries.
+
+## Usage
+
+- Create a MongoDB database and obtain your `MongoDB URI`
+- Create a PayPal account and obtain your `Client ID`
+
+### Env Variables
+
+Rename the `.env.example` file to `.env` and add the following
+
+```
+NODE_ENV = development
+PORT = 5000
+MONGO_URI = your mongodb uri
+JWT_SECRET = 'abc123'
+PAYPAL_CLIENT_ID = your paypal client id
+```
+
+Change the JWT_SECRET to what you want
 
 ## Getting Started
 
