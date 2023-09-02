@@ -70,7 +70,7 @@ const CartScreen = () => {
                             alt={item.name}
                             fluid
                             rounded
-                            style={{ width: "100px", heigh: "100px" }}
+                            style={{ width: "100px", heigh: "100px"}}
                           ></Image>
                         </Col>
                         <Col md={3}>

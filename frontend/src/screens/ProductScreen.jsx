@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useParams, Link, useNavigate } from "react-router-dom";
-import { Row, Col, Image, ListGroup, Card, Modal, Form } from "react-bootstrap";
-import { Button } from "../utils/Button/Button";
+import { Row, Col, Image, ListGroup, Card, Modal, Form, Button } from "react-bootstrap";
+//import { Button } from "../utils/Button/Button";
 import { useDispatch, useSelector } from "react-redux";
 import { toast } from "react-toastify";
 import Rating from "../components/Rating/Rating";
@@ -188,16 +188,16 @@ const ProductScreen = () => {
                           )}
 
                           <Col md={4}>
-                            <Button
-                              text="Add To Cart"
-                              color="yellow"
-                              type="button"
-                              style={{ color: "white" }}
-                              disabled={product.countInStock === 0}
-                              onClick={addToCartHandler}
-                            >
-                              Add To Cart
-                            </Button>
+                          
+                          <Button
+                            className='btn-block'
+                            type='button'
+                            disabled={product.countInStock === 0}
+                            onClick={addToCartHandler}
+                          >
+                            Add To Cart
+                          </Button>
+                 
                           </Col>
                         </Row>
                       </ListGroup>
